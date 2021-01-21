@@ -15,7 +15,8 @@
         "https://*/*"
       ],
     "js": [
-    "js/main.js"
+    "js/main.js",
+    "js/jquery-3.5.1.min.js"
     ]
   },
   {
