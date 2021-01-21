@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "ntoso",
+  "version": "1.0",
+  "description": "Hello, World",
+  "permissions": ["notifications","alarms", "activeTab", "http://*/*", "https://*/*"],
+  "background": {
+    "scripts": ["js/main.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+  {
+    "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+    "js": [
+    "js/main.js"
+    ]
+  },
+  {
+    "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "css": ["main.css"]
+  }
+
+],
+  "icons": {
+    "128": "images/w128.png"
+  },
+  "browser_action": {
+    "default_popup": "main.html",
+    "default_icon": "images/w128.png"
+  }
+}
