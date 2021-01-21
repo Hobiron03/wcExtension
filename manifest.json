@@ -3,9 +3,9 @@
   "name": "ntoso",
   "version": "1.0",
   "description": "Hello, World",
-  "permissions": ["notifications","alarms", "activeTab", "http://*/*", "https://*/*"],
+  "permissions": ["notifications","alarms", "activeTab", "http://*/*", "https://*/*", "storage", "unlimitedStorage"],
   "background": {
-    "scripts": ["js/main.js"],
+    "scripts": ["js/background.js"],
     "persistent": true
   },
   "content_scripts": [
