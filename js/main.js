@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("save").addEventListener("click", function () {
     console.log("push fetch button");
     chrome.tabs.executeScript({
-      file: "js/contentScript.js",
+      file: "js/saveScript.js",
     });
   });
 

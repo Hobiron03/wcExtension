@@ -26,8 +26,10 @@
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.method == "getUser") {
-    sendResponse({ user_id: localStorage[request.user_id] });
-  } else {
-    sendResponse({});
+    sendResponse({ user_id: localStorage["user_id"] });
+  } else if (request.method == "setUser") {
+    localStorage["user_id"] = 2;
   }
+
+  return true;
 });
